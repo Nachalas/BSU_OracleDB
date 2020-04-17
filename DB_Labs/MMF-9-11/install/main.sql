@@ -5,6 +5,8 @@ PROMPT Enter schema name:
 DEFINE SCHEMA_NAME = &&1
 PROMPT Enter password:
 DEFINE SCHEMA_PASSWORD = &&2
+PROMPT Enter DB location:
+DEFINE TABLESPACE_LOCATION = &&3
 
 SPOOL INSTALL_LOG.LOG
 SET SERVEROUTPUT ON
@@ -15,7 +17,7 @@ PROMPT ###
 PROMPT Executing create_tablespace.sql
 PROMPT ###
 
-@create_tablespace.sql &&SCHEMA_NAME
+@create_tablespace.sql &&SCHEMA_NAME &&TABLESPACE_LOCATION
 
 PROMPT ###
 PROMPT Executing create_schema.sql
