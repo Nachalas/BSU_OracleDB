@@ -1,0 +1,57 @@
+
+Session altered.
+
+Elapsed: 00:00:00.09
+###
+Executing create_tablespace.sql
+###
+old   1: CREATE TABLESPACE &&DATA_TABLESPACE_NAME
+new   1: CREATE TABLESPACE MMF_9_11_DATA
+old   2: 	DATAFILE '&&DATA_TABLESPACE_DBF_FILE' SIZE 5M AUTOEXTEND ON NEXT 10M MAXSIZE 2G
+new   2: 	DATAFILE 'F:\MMF_9_11_DATA.dbf' SIZE 5M AUTOEXTEND ON NEXT 10M MAXSIZE 2G
+
+Tablespace created.
+
+Elapsed: 00:00:01.38
+###
+Executing create_schema.sql
+###
+old   1: CREATE USER &&SCHEMA_NAME
+new   1: CREATE USER MMF_9_11
+old   2:  IDENTIFIED BY &&SCHEMA_PASSWORD
+new   2:  IDENTIFIED BY oracle
+old   3:  DEFAULT TABLESPACE &&DEFAULT_TABLESPACE
+new   3:  DEFAULT TABLESPACE MMF_9_11_DATA
+old   5:  QUOTA UNLIMITED on &&DEFAULT_TABLESPACE
+new   5:  QUOTA UNLIMITED on MMF_9_11_DATA
+
+User created.
+
+Elapsed: 00:00:00.86
+###
+Executing privilege_schema.sql
+###
+old   1: GRANT CREATE SESSION TO &&SCHEMA_NAME
+new   1: GRANT CREATE SESSION TO MMF_9_11
+
+Grant succeeded.
+
+Elapsed: 00:00:00.07
+old   1: GRANT CREATE TABLE TO &&SCHEMA_NAME
+new   1: GRANT CREATE TABLE TO MMF_9_11
+
+Grant succeeded.
+
+Elapsed: 00:00:00.00
+old   1: GRANT CREATE PROCEDURE, CREATE VIEW, CREATE SEQUENCE TO &&SCHEMA_NAME
+new   1: GRANT CREATE PROCEDURE, CREATE VIEW, CREATE SEQUENCE TO MMF_9_11
+
+Grant succeeded.
+
+Elapsed: 00:00:00.00
+old   1: GRANT CREATE TRIGGER TO &&SCHEMA_NAME
+new   1: GRANT CREATE TRIGGER TO MMF_9_11
+
+Grant succeeded.
+
+Elapsed: 00:00:00.00
