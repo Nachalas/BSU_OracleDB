@@ -8,19 +8,19 @@ Executing create_tablespace.sql
 old   1: CREATE TABLESPACE &&DATA_TABLESPACE_NAME
 new   1: CREATE TABLESPACE MMF_9_11_DATA
 old   2: 	DATAFILE '&&DATA_TABLESPACE_DBF_FILE' SIZE 5M AUTOEXTEND ON NEXT 10M MAXSIZE 2G
-new   2: 	DATAFILE 'F:\dbtest\MMF_9_11_DATA.dbf' SIZE 5M AUTOEXTEND ON NEXT 10M MAXSIZE 2G
+new   2: 	DATAFILE 'F:\dbtest\.MMF_9_11_DATA.dbf' SIZE 5M AUTOEXTEND ON NEXT 10M MAXSIZE 2G
 
 Tablespace created.
 
-Elapsed: 00:00:00.54
+Elapsed: 00:00:00.57
 old   1: CREATE TABLESPACE &&INDEX_TABLESPACE_NAME
 new   1: CREATE TABLESPACE MMF_9_11_IDX
 old   2: 	DATAFILE '&&INDEX_TABLESPACE_DBF_FILE' SIZE 5M AUTOEXTEND ON NEXT 10M MAXSIZE 2G
-new   2: 	DATAFILE 'F:\dbtest\MMF_9_11_IDX.dbf' SIZE 5M AUTOEXTEND ON NEXT 10M MAXSIZE 2G
+new   2: 	DATAFILE 'F:\dbtest\.MMF_9_11_IDX.dbf' SIZE 5M AUTOEXTEND ON NEXT 10M MAXSIZE 2G
 
 Tablespace created.
 
-Elapsed: 00:00:00.52
+Elapsed: 00:00:00.47
 ###
 Executing create_schema.sql
 ###
@@ -35,7 +35,7 @@ new   5:  QUOTA UNLIMITED on MMF_9_11_DATA
 
 User created.
 
-Elapsed: 00:00:00.06
+Elapsed: 00:00:00.04
 ###
 Executing privilege_schema.sql
 ###
