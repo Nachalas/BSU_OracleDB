@@ -1,0 +1,502 @@
+Enter value for 1: MMF_9_11
+-- PROMPT Connecting to schema MMF_9_11
+-- 
+Connected.
+
+Table created.
+
+Elapsed: 00:00:00.00
+
+Comment created.
+
+Elapsed: 00:00:00.00
+
+Comment created.
+
+Elapsed: 00:00:00.00
+
+Comment created.
+
+Elapsed: 00:00:00.00
+
+Comment created.
+
+Elapsed: 00:00:00.00
+
+Comment created.
+
+Elapsed: 00:00:00.00
+
+Comment created.
+
+Elapsed: 00:00:00.00
+
+Comment created.
+
+Elapsed: 00:00:00.00
+
+Table created.
+
+Elapsed: 00:00:00.00
+
+Comment created.
+
+Elapsed: 00:00:00.00
+
+Comment created.
+
+Elapsed: 00:00:00.00
+
+Comment created.
+
+Elapsed: 00:00:00.00
+
+Comment created.
+
+Elapsed: 00:00:00.00
+
+Comment created.
+
+Elapsed: 00:00:00.00
+
+Comment created.
+
+Elapsed: 00:00:00.00
+
+Comment created.
+
+Elapsed: 00:00:00.00
+
+Comment created.
+
+Elapsed: 00:00:00.00
+
+Comment created.
+
+Elapsed: 00:00:00.00
+
+Table created.
+
+Elapsed: 00:00:00.00
+
+Comment created.
+
+Elapsed: 00:00:00.00
+
+Comment created.
+
+Elapsed: 00:00:00.00
+
+Comment created.
+
+Elapsed: 00:00:00.00
+
+Comment created.
+
+Elapsed: 00:00:00.00
+
+Table created.
+
+Elapsed: 00:00:00.00
+
+Comment created.
+
+Elapsed: 00:00:00.00
+
+Comment created.
+
+Elapsed: 00:00:00.00
+
+Comment created.
+
+Elapsed: 00:00:00.00
+
+Table created.
+
+Elapsed: 00:00:00.00
+
+Comment created.
+
+Elapsed: 00:00:00.00
+
+Comment created.
+
+Elapsed: 00:00:00.00
+
+Comment created.
+
+Elapsed: 00:00:00.00
+
+Comment created.
+
+Elapsed: 00:00:00.00
+
+Comment created.
+
+Elapsed: 00:00:00.00
+
+Comment created.
+
+Elapsed: 00:00:00.00
+
+Comment created.
+
+Elapsed: 00:00:00.00
+
+Comment created.
+
+Elapsed: 00:00:00.00
+
+Table created.
+
+Elapsed: 00:00:00.00
+
+Table created.
+
+Elapsed: 00:00:00.00
+
+Table created.
+
+Elapsed: 00:00:00.00
+
+Table created.
+
+Elapsed: 00:00:00.00
+
+Table created.
+
+Elapsed: 00:00:00.00
+
+Table created.
+
+Elapsed: 00:00:00.00
+
+Table created.
+
+Elapsed: 00:00:00.00
+
+Table created.
+
+Elapsed: 00:00:00.00
+
+Comment created.
+
+Elapsed: 00:00:00.00
+
+Table created.
+
+Elapsed: 00:00:00.00
+
+Comment created.
+
+Elapsed: 00:00:00.00
+
+Table created.
+
+Elapsed: 00:00:00.00
+
+Comment created.
+
+Elapsed: 00:00:00.00
+old   1: ALTER TABLE Playlist ADD CONSTRAINT PK_Playlist PRIMARY KEY (ID) USING INDEX TABLESPACE &&INDEX_TABLESPACE_NAME
+new   1: ALTER TABLE Playlist ADD CONSTRAINT PK_Playlist PRIMARY KEY (ID) USING INDEX TABLESPACE MMF_9_11_IDX
+
+Table altered.
+
+Elapsed: 00:00:00.01
+old   1: ALTER TABLE Composition ADD CONSTRAINT PK_Composition PRIMARY KEY (ID) USING INDEX TABLESPACE &&INDEX_TABLESPACE_NAME
+new   1: ALTER TABLE Composition ADD CONSTRAINT PK_Composition PRIMARY KEY (ID) USING INDEX TABLESPACE MMF_9_11_IDX
+
+Table altered.
+
+Elapsed: 00:00:00.01
+old   1: ALTER TABLE UserT ADD CONSTRAINT PK_User PRIMARY KEY (ID) USING INDEX TABLESPACE &&INDEX_TABLESPACE_NAME
+new   1: ALTER TABLE UserT ADD CONSTRAINT PK_User PRIMARY KEY (ID) USING INDEX TABLESPACE MMF_9_11_IDX
+
+Table altered.
+
+Elapsed: 00:00:00.00
+old   1: ALTER TABLE UsersCompositions ADD CONSTRAINT PK_UsersCompositions PRIMARY KEY (User_ID,Composition_ID) USING INDEX TABLESPACE &&INDEX_TABLESPACE_NAME
+new   1: ALTER TABLE UsersCompositions ADD CONSTRAINT PK_UsersCompositions PRIMARY KEY (User_ID,Composition_ID) USING INDEX TABLESPACE MMF_9_11_IDX
+
+Table altered.
+
+Elapsed: 00:00:00.01
+old   1: ALTER TABLE PlaylistSongs ADD CONSTRAINT PK_PlaylistSongs PRIMARY KEY (Playlist_ID,Song_ID) USING INDEX TABLESPACE &&INDEX_TABLESPACE_NAME
+new   1: ALTER TABLE PlaylistSongs ADD CONSTRAINT PK_PlaylistSongs PRIMARY KEY (Playlist_ID,Song_ID) USING INDEX TABLESPACE MMF_9_11_IDX
+
+Table altered.
+
+Elapsed: 00:00:00.01
+old   1: ALTER TABLE Album ADD CONSTRAINT PK_Album PRIMARY KEY (ID) USING INDEX TABLESPACE &&INDEX_TABLESPACE_NAME
+new   1: ALTER TABLE Album ADD CONSTRAINT PK_Album PRIMARY KEY (ID) USING INDEX TABLESPACE MMF_9_11_IDX
+
+Table altered.
+
+Elapsed: 00:00:00.01
+old   1: ALTER TABLE AlbumSongs ADD CONSTRAINT PK_AlbumSongs PRIMARY KEY (Composition_ID,Album_ID) USING INDEX TABLESPACE &&INDEX_TABLESPACE_NAME
+new   1: ALTER TABLE AlbumSongs ADD CONSTRAINT PK_AlbumSongs PRIMARY KEY (Composition_ID,Album_ID) USING INDEX TABLESPACE MMF_9_11_IDX
+
+Table altered.
+
+Elapsed: 00:00:00.00
+old   1: ALTER TABLE SongsLikes ADD CONSTRAINT PK_SongsLikes PRIMARY KEY (User_ID,Composition_ID) USING INDEX TABLESPACE &&INDEX_TABLESPACE_NAME
+new   1: ALTER TABLE SongsLikes ADD CONSTRAINT PK_SongsLikes PRIMARY KEY (User_ID,Composition_ID) USING INDEX TABLESPACE MMF_9_11_IDX
+
+Table altered.
+
+Elapsed: 00:00:00.01
+old   1: ALTER TABLE AlbumsLikes ADD CONSTRAINT PK_AlbumsLikes PRIMARY KEY (Album_ID,User_ID) USING INDEX TABLESPACE &&INDEX_TABLESPACE_NAME
+new   1: ALTER TABLE AlbumsLikes ADD CONSTRAINT PK_AlbumsLikes PRIMARY KEY (Album_ID,User_ID) USING INDEX TABLESPACE MMF_9_11_IDX
+
+Table altered.
+
+Elapsed: 00:00:00.01
+old   1: ALTER TABLE Style ADD CONSTRAINT PK_Style PRIMARY KEY (ID) USING INDEX TABLESPACE &&INDEX_TABLESPACE_NAME
+new   1: ALTER TABLE Style ADD CONSTRAINT PK_Style PRIMARY KEY (ID) USING INDEX TABLESPACE MMF_9_11_IDX
+
+Table altered.
+
+Elapsed: 00:00:00.01
+old   1: ALTER TABLE Preferences ADD CONSTRAINT PK_Preferences PRIMARY KEY (User_ID,Style_ID) USING INDEX TABLESPACE &&INDEX_TABLESPACE_NAME
+new   1: ALTER TABLE Preferences ADD CONSTRAINT PK_Preferences PRIMARY KEY (User_ID,Style_ID) USING INDEX TABLESPACE MMF_9_11_IDX
+
+Table altered.
+
+Elapsed: 00:00:00.05
+old   1: ALTER TABLE Subscriptions ADD CONSTRAINT PK_Subscriptions PRIMARY KEY (User_ID,Subscribed_to) USING INDEX TABLESPACE &&INDEX_TABLESPACE_NAME
+new   1: ALTER TABLE Subscriptions ADD CONSTRAINT PK_Subscriptions PRIMARY KEY (User_ID,Subscribed_to) USING INDEX TABLESPACE MMF_9_11_IDX
+
+Table altered.
+
+Elapsed: 00:00:00.02
+old   1: ALTER TABLE CompositionReviews ADD CONSTRAINT PK_CompositionReviews PRIMARY KEY (User_ID,Composition_ID) USING INDEX TABLESPACE &&INDEX_TABLESPACE_NAME
+new   1: ALTER TABLE CompositionReviews ADD CONSTRAINT PK_CompositionReviews PRIMARY KEY (User_ID,Composition_ID) USING INDEX TABLESPACE MMF_9_11_IDX
+
+Table altered.
+
+Elapsed: 00:00:00.01
+old   1: ALTER TABLE AlbumReviews ADD CONSTRAINT PK_AlbumReviews PRIMARY KEY (User_ID,Album_ID) USING INDEX TABLESPACE &&INDEX_TABLESPACE_NAME
+new   1: ALTER TABLE AlbumReviews ADD CONSTRAINT PK_AlbumReviews PRIMARY KEY (User_ID,Album_ID) USING INDEX TABLESPACE MMF_9_11_IDX
+
+Table altered.
+
+Elapsed: 00:00:00.01
+old   1: ALTER TABLE ListeningHistory ADD CONSTRAINT PK_ListeningHistory PRIMARY KEY (User_ID,Composition_ID) USING INDEX TABLESPACE &&INDEX_TABLESPACE_NAME
+new   1: ALTER TABLE ListeningHistory ADD CONSTRAINT PK_ListeningHistory PRIMARY KEY (User_ID,Composition_ID) USING INDEX TABLESPACE MMF_9_11_IDX
+
+Table altered.
+
+Elapsed: 00:00:00.01
+old   1: CREATE INDEX User_ListeningTo_IDX ON UserT (Listening_to) TABLESPACE &&INDEX_TABLESPACE_NAME
+new   1: CREATE INDEX User_ListeningTo_IDX ON UserT (Listening_to) TABLESPACE MMF_9_11_IDX
+
+Index created.
+
+Elapsed: 00:00:00.00
+old   1: CREATE INDEX Album_Owner_IDX ON Album (Owner_ID) TABLESPACE &&INDEX_TABLESPACE_NAME
+new   1: CREATE INDEX Album_Owner_IDX ON Album (Owner_ID) TABLESPACE MMF_9_11_IDX
+
+Index created.
+
+Elapsed: 00:00:00.00
+old   1: CREATE INDEX Album_Style_IDX ON Album (Style_ID) TABLESPACE &&INDEX_TABLESPACE_NAME
+new   1: CREATE INDEX Album_Style_IDX ON Album (Style_ID) TABLESPACE MMF_9_11_IDX
+
+Index created.
+
+Elapsed: 00:00:00.00
+old   1: CREATE INDEX Composition_Style_IDX ON Composition (Style_ID) TABLESPACE &&INDEX_TABLESPACE_NAME
+new   1: CREATE INDEX Composition_Style_IDX ON Composition (Style_ID) TABLESPACE MMF_9_11_IDX
+
+Index created.
+
+Elapsed: 00:00:00.00
+old   1: CREATE INDEX Composition_Owner_IDX ON Composition (Owner_ID) TABLESPACE &&INDEX_TABLESPACE_NAME
+new   1: CREATE INDEX Composition_Owner_IDX ON Composition (Owner_ID) TABLESPACE MMF_9_11_IDX
+
+Index created.
+
+Elapsed: 00:00:00.00
+
+Table altered.
+
+Elapsed: 00:00:00.00
+
+Table altered.
+
+Elapsed: 00:00:00.00
+
+Table altered.
+
+Elapsed: 00:00:00.00
+
+Table altered.
+
+Elapsed: 00:00:00.00
+
+Table altered.
+
+Elapsed: 00:00:00.00
+
+Table altered.
+
+Elapsed: 00:00:00.00
+
+Table altered.
+
+Elapsed: 00:00:00.00
+
+Table altered.
+
+Elapsed: 00:00:00.00
+
+Table altered.
+
+Elapsed: 00:00:00.00
+
+Table altered.
+
+Elapsed: 00:00:00.00
+
+Table altered.
+
+Elapsed: 00:00:00.00
+
+Table altered.
+
+Elapsed: 00:00:00.00
+
+Table altered.
+
+Elapsed: 00:00:00.00
+
+Table altered.
+
+Elapsed: 00:00:00.00
+
+Table altered.
+
+Elapsed: 00:00:00.00
+
+Table altered.
+
+Elapsed: 00:00:00.00
+
+Table altered.
+
+Elapsed: 00:00:00.00
+
+Table altered.
+
+Elapsed: 00:00:00.00
+
+Table altered.
+
+Elapsed: 00:00:00.00
+
+Table altered.
+
+Elapsed: 00:00:00.00
+
+Table altered.
+
+Elapsed: 00:00:00.00
+
+Table altered.
+
+Elapsed: 00:00:00.00
+
+Table altered.
+
+Elapsed: 00:00:00.00
+old   1: ALTER TABLE ALBUM MOVE TABLESPACE &&DATA_TABLESPACE_NAME
+new   1: ALTER TABLE ALBUM MOVE TABLESPACE MMF_9_11_DATA
+
+Table altered.
+
+Elapsed: 00:00:00.00
+old   1: ALTER TABLE COMPOSITION MOVE TABLESPACE &&DATA_TABLESPACE_NAME
+new   1: ALTER TABLE COMPOSITION MOVE TABLESPACE MMF_9_11_DATA
+
+Table altered.
+
+Elapsed: 00:00:00.00
+old   1: ALTER TABLE PLAYLIST MOVE TABLESPACE &&DATA_TABLESPACE_NAME
+new   1: ALTER TABLE PLAYLIST MOVE TABLESPACE MMF_9_11_DATA
+
+Table altered.
+
+Elapsed: 00:00:00.00
+old   1: ALTER TABLE USERT MOVE TABLESPACE &&DATA_TABLESPACE_NAME
+new   1: ALTER TABLE USERT MOVE TABLESPACE MMF_9_11_DATA
+
+Table altered.
+
+Elapsed: 00:00:00.00
+old   1: ALTER TABLE UsersCompositions MOVE TABLESPACE &&DATA_TABLESPACE_NAME
+new   1: ALTER TABLE UsersCompositions MOVE TABLESPACE MMF_9_11_DATA
+
+Table altered.
+
+Elapsed: 00:00:00.00
+old   1: ALTER TABLE PlaylistSongs MOVE TABLESPACE &&DATA_TABLESPACE_NAME
+new   1: ALTER TABLE PlaylistSongs MOVE TABLESPACE MMF_9_11_DATA
+
+Table altered.
+
+Elapsed: 00:00:00.00
+old   1: ALTER TABLE AlbumSongs MOVE TABLESPACE &&DATA_TABLESPACE_NAME
+new   1: ALTER TABLE AlbumSongs MOVE TABLESPACE MMF_9_11_DATA
+
+Table altered.
+
+Elapsed: 00:00:00.00
+old   1: ALTER TABLE SongsLikes MOVE TABLESPACE &&DATA_TABLESPACE_NAME
+new   1: ALTER TABLE SongsLikes MOVE TABLESPACE MMF_9_11_DATA
+
+Table altered.
+
+Elapsed: 00:00:00.00
+old   1: ALTER TABLE AlbumsLikes MOVE TABLESPACE &&DATA_TABLESPACE_NAME
+new   1: ALTER TABLE AlbumsLikes MOVE TABLESPACE MMF_9_11_DATA
+
+Table altered.
+
+Elapsed: 00:00:00.00
+old   1: ALTER TABLE Style MOVE TABLESPACE &&DATA_TABLESPACE_NAME
+new   1: ALTER TABLE Style MOVE TABLESPACE MMF_9_11_DATA
+
+Table altered.
+
+Elapsed: 00:00:00.00
+old   1: ALTER TABLE Preferences MOVE TABLESPACE &&DATA_TABLESPACE_NAME
+new   1: ALTER TABLE Preferences MOVE TABLESPACE MMF_9_11_DATA
+
+Table altered.
+
+Elapsed: 00:00:00.00
+old   1: ALTER TABLE Subscriptions MOVE TABLESPACE &&DATA_TABLESPACE_NAME
+new   1: ALTER TABLE Subscriptions MOVE TABLESPACE MMF_9_11_DATA
+
+Table altered.
+
+Elapsed: 00:00:00.00
+old   1: ALTER TABLE CompositionReviews MOVE TABLESPACE &&DATA_TABLESPACE_NAME
+new   1: ALTER TABLE CompositionReviews MOVE TABLESPACE MMF_9_11_DATA
+
+Table altered.
+
+Elapsed: 00:00:00.01
+old   1: ALTER TABLE AlbumReviews MOVE TABLESPACE &&DATA_TABLESPACE_NAME
+new   1: ALTER TABLE AlbumReviews MOVE TABLESPACE MMF_9_11_DATA
+
+Table altered.
+
+Elapsed: 00:00:00.00
+old   1: ALTER TABLE ListeningHistory MOVE TABLESPACE &&DATA_TABLESPACE_NAME
+new   1: ALTER TABLE ListeningHistory MOVE TABLESPACE MMF_9_11_DATA
+
+Table altered.
+
+Elapsed: 00:00:00.00
