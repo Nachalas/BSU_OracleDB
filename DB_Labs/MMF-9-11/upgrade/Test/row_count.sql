@@ -31,7 +31,5 @@ select count(*) into rowCount from SONGSLIKES;
 DBMS_OUTPUT.PUT_LINE('SONGSLIKES - row count: '|| rowCount);
 select count(*) into rowCount from SUBSCRIPTIONS; 
 DBMS_OUTPUT.PUT_LINE('SUBSCRIPTIONS - row count: '|| rowCount); 
-select count(*) into rowCount from USERSCOMPOSITIONS;
-DBMS_OUTPUT.PUT_LINE('USERSCOMPOSITIONS - row count: '|| rowCount); 
 end;
 /

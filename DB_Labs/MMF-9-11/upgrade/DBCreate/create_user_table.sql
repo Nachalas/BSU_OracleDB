@@ -1,3 +1,6 @@
+DEFINE SCHEMA_NAME = &&1
+DEFINE DATA_TABLESPACE_NAME = '&&SCHEMA_NAME._DATA'
+
 CREATE TABLE UserT(
   ID Number GENERATED ALWAYS AS IDENTITY INCREMENT BY 1 START WITH 1 MINVALUE 1 NOT NULL,
   Nickname Varchar2(30 ) NOT NULL,
@@ -6,8 +9,8 @@ CREATE TABLE UserT(
   EMail Varchar2(30 ) NOT NULL,
   Bio Varchar2(200 ),
   Listening_to Number,
-  Paused_at Integer
-);
+  Paused_at Varchar2(20)
+) TABLESPACE &&DATA_TABLESPACE_NAME;
 
 COMMENT ON COLUMN UserT.ID IS 'User''s ID (PK)';
 COMMENT ON COLUMN UserT.Nickname IS 'User''s nickname';
