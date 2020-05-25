@@ -3,13 +3,13 @@ DEFINE DATA_TABLESPACE_NAME = '&&SCHEMA_NAME._DATA'
 
 CREATE TABLE UserT(
   ID Number GENERATED ALWAYS AS IDENTITY INCREMENT BY 1 START WITH 1 MINVALUE 1 NOT NULL,
-  Nickname Varchar2(30 ) NOT NULL,
-  First_name Varchar2(30 ),
-  Last_name Varchar2(30 ),
-  EMail Varchar2(30 ) NOT NULL,
+  Nickname Varchar2(50 ) NOT NULL,
+  First_name Varchar2(50 ),
+  Last_name Varchar2(50 ),
+  EMail Varchar2(50 ),
   Bio Varchar2(200 ),
   Listening_to Number,
-  Paused_at Varchar2(20)
+  Paused_at Varchar2(50)
 ) TABLESPACE &&DATA_TABLESPACE_NAME;
 
 COMMENT ON COLUMN UserT.ID IS 'User''s ID (PK)';

@@ -60,7 +60,7 @@ ERROR at line 1:
 ORA-00904: "LENGTH": invalid identifier 
 
 
-Elapsed: 00:00:00.06
+Elapsed: 00:00:00.00
 
 Comment created.
 
@@ -86,7 +86,7 @@ new   7: ) TABLESPACE MMF_9_11_DATA
 
 Table created.
 
-Elapsed: 00:00:00.01
+Elapsed: 00:00:00.00
 
 Comment created.
 
@@ -111,7 +111,7 @@ new   5: ) TABLESPACE MMF_9_11_DATA
 
 Table created.
 
-Elapsed: 00:00:00.00
+Elapsed: 00:00:00.07
 
 Comment created.
 
@@ -129,7 +129,7 @@ new  10: ) TABLESPACE MMF_9_11_DATA
 
 Table created.
 
-Elapsed: 00:00:00.00
+Elapsed: 00:00:00.01
 
 Comment created.
 
@@ -269,7 +269,7 @@ new   1: ALTER TABLE SongsLikes ADD CONSTRAINT PK_SongsLikes PRIMARY KEY (User_I
 
 Table altered.
 
-Elapsed: 00:00:00.01
+Elapsed: 00:00:00.00
 old   1: ALTER TABLE AlbumsLikes ADD CONSTRAINT PK_AlbumsLikes PRIMARY KEY (Album_ID,User_ID) USING INDEX TABLESPACE &&INDEX_TABLESPACE_NAME
 new   1: ALTER TABLE AlbumsLikes ADD CONSTRAINT PK_AlbumsLikes PRIMARY KEY (Album_ID,User_ID) USING INDEX TABLESPACE MMF_9_11_IDX
 
@@ -281,7 +281,7 @@ new   1: ALTER TABLE Style ADD CONSTRAINT PK_Style PRIMARY KEY (ID) USING INDEX 
 
 Table altered.
 
-Elapsed: 00:00:00.01
+Elapsed: 00:00:00.00
 old   1: ALTER TABLE Preferences ADD CONSTRAINT PK_Preferences PRIMARY KEY (User_ID,Style_ID) USING INDEX TABLESPACE &&INDEX_TABLESPACE_NAME
 new   1: ALTER TABLE Preferences ADD CONSTRAINT PK_Preferences PRIMARY KEY (User_ID,Style_ID) USING INDEX TABLESPACE MMF_9_11_IDX
 
@@ -293,7 +293,7 @@ new   1: ALTER TABLE Subscriptions ADD CONSTRAINT PK_Subscriptions PRIMARY KEY (
 
 Table altered.
 
-Elapsed: 00:00:00.01
+Elapsed: 00:00:00.00
 old   1: ALTER TABLE CompositionReviews ADD CONSTRAINT PK_CompositionReviews PRIMARY KEY (User_ID,Composition_ID) USING INDEX TABLESPACE &&INDEX_TABLESPACE_NAME
 new   1: ALTER TABLE CompositionReviews ADD CONSTRAINT PK_CompositionReviews PRIMARY KEY (User_ID,Composition_ID) USING INDEX TABLESPACE MMF_9_11_IDX
 
@@ -305,13 +305,13 @@ new   1: ALTER TABLE AlbumReviews ADD CONSTRAINT PK_AlbumReviews PRIMARY KEY (Us
 
 Table altered.
 
-Elapsed: 00:00:00.01
+Elapsed: 00:00:00.00
 old   1: ALTER TABLE ListeningHistory ADD CONSTRAINT PK_ListeningHistory PRIMARY KEY (User_ID,Composition_ID) USING INDEX TABLESPACE &&INDEX_TABLESPACE_NAME
 new   1: ALTER TABLE ListeningHistory ADD CONSTRAINT PK_ListeningHistory PRIMARY KEY (User_ID,Composition_ID) USING INDEX TABLESPACE MMF_9_11_IDX
 
 Table altered.
 
-Elapsed: 00:00:00.01
+Elapsed: 00:00:00.00
 old   1: CREATE INDEX User_ListeningTo_IDX ON UserT (Listening_to) TABLESPACE &&INDEX_TABLESPACE_NAME
 new   1: CREATE INDEX User_ListeningTo_IDX ON UserT (Listening_to) TABLESPACE MMF_9_11_IDX
 
@@ -371,7 +371,15 @@ Elapsed: 00:00:00.00
 
 Table altered.
 
-Elapsed: 00:00:00.00
+Elapsed: 00:00:00.09
+
+Table altered.
+
+Elapsed: 00:00:00.01
+
+Table altered.
+
+Elapsed: 00:00:00.01
 
 Table altered.
 
@@ -380,38 +388,6 @@ Elapsed: 00:00:00.00
 Table altered.
 
 Elapsed: 00:00:00.00
-
-Table altered.
-
-Elapsed: 00:00:00.00
-
-Table altered.
-
-Elapsed: 00:00:00.00
-
-Table altered.
-
-Elapsed: 00:00:00.00
-
-Table altered.
-
-Elapsed: 00:00:00.00
-
-Table altered.
-
-Elapsed: 00:00:00.07
-
-Table altered.
-
-Elapsed: 00:00:00.02
-
-Table altered.
-
-Elapsed: 00:00:00.02
-
-Table altered.
-
-Elapsed: 00:00:00.02
 
 Table altered.
 
@@ -431,7 +407,7 @@ Elapsed: 00:00:00.01
 
 Table altered.
 
-Elapsed: 00:00:00.01
+Elapsed: 00:00:00.00
 
 Table altered.
 
@@ -439,7 +415,31 @@ Elapsed: 00:00:00.00
 
 Table altered.
 
-Elapsed: 00:00:00.01
+Elapsed: 00:00:00.00
+
+Table altered.
+
+Elapsed: 00:00:00.00
+
+Table altered.
+
+Elapsed: 00:00:00.00
+
+Table altered.
+
+Elapsed: 00:00:00.00
+
+Table altered.
+
+Elapsed: 00:00:00.00
+
+Table altered.
+
+Elapsed: 00:00:00.00
+
+Table altered.
+
+Elapsed: 00:00:00.00
 
 Table altered.
 
