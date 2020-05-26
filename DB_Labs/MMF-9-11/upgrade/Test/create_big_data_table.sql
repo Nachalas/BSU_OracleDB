@@ -49,3 +49,5 @@ INSERT INTO DATA_TABLE(First_name,Last_name,Nickname,Email,Playlist_name,Playlis
 VALUES('Елизавета','Рапинчук','Bug','Circle_Bug@gmail.com','Bamboo','User','Electronic','Little Fish','2.13','Hélder','Leal','Hotshot','yes',6587,8890,'','','');
 INSERT INTO DATA_TABLE(First_name,Last_name,Nickname,Email,Playlist_name,Playlist_Type,Music_Type,Composition_name,"Length",Owner_First_name,Owner_Last_name,Owner_nickname,"Like",Composition_Likes,Listen,Comments_Track,Current_listening,Stopped_Time) 
 VALUES('Елизавета','Рапинчук','Bug','Circle_Bug@gmail.com','Bamboo','User','Electronic','Jamie XX - Loud Places (feat. Romy)','4.43','Hélder','Leal','Hotshot','no',2201,202023,'','','');
+
+commit;

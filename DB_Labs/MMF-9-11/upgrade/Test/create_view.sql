@@ -42,3 +42,4 @@ on sl.user_id = c_user.id and sl.composition_id = c.id
 left join compositionreviews cr 
 on cr.user_id = c_user.id and cr.composition_id = c.id;
 
+commit;

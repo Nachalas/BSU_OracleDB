@@ -286,4 +286,4 @@ when not matched then
     tmp.c_id
     );
     
-    
+commit;
